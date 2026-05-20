@@ -11,8 +11,15 @@ const mouseEnter = () =>{
     <div>
       <h1>Hello, Abhijit</h1>
 
-      <button onClick={btnClicked} onMouseEnter={mouseEnter}>change User</button>   
+      <button onClick={btnClicked} onMouseEnter={mouseEnter}>Button Enter</button>   
       
+      {/* another method to create function for button */}
+      <button onClick={() =>{
+        console.log("Button 2 Clicked");
+      }}>Click me</button>
+      
+
+      {/* we have directly created a arrow function inside call of onClick */}
       
     </div>
   )
