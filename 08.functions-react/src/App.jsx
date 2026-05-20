@@ -20,7 +20,11 @@ const mouseEnter = () =>{
       
 
       {/* we have directly created a arrow function inside call of onClick */}
-      
+
+      <input onChange={() =>{
+        console.log("user is typing")
+      }} type="text" placeholder="Enter Name"/>
+
     </div>
   )
   // never call it () keep only btnClicked 
