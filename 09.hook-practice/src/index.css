@@ -49,9 +49,6 @@
     filter: invert(1) brightness(2);
   }
 }
-button{
-  margin: 10px;
-}
 
 body {
   margin: 0;
@@ -69,9 +66,6 @@ body {
   box-sizing: border-box;
 }
 
-input{
-  padding: 10px;
-}
 h1,
 h2 {
   font-family: var(--heading);
@@ -114,23 +108,4 @@ code {
   line-height: 135%;
   padding: 4px 8px;
   background: var(--code-bg);
-}
-
-.page1{
-  background-color: #2e303a;
-  width: 100vw;
-  height: 100px;
-
-}
-.page2{
-  background-color: #6881ff;
-  width: 100vw;
-  height: 500px;
-  
-}
-.page3{
-  background-color: #89ffa0;
-  width: 100vw;
-  height: 100px;
-  
 }

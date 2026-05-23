@@ -7,6 +7,9 @@ const btnClicked = () =>{
 const mouseEnter = () =>{
   console.log("Mouse Entered")
 }
+  const scrollEvent = (val) =>{
+    console.log(val.pageX)
+  }
   return (
     <div>
       <h1>Hello, Abhijit</h1>
@@ -21,9 +24,23 @@ const mouseEnter = () =>{
 
       {/* we have directly created a arrow function inside call of onClick */}
 
-      <input onChange={() =>{
-        console.log("user is typing")
+      <input onChange={(elem2) =>{
+        console.log(elem2.target.value)
       }} type="text" placeholder="Enter Name"/>
+
+      <div className="page-parent" onWheel={(elem)=>{
+        scrollEvent(elem);
+      }}>
+        <div className="page1">
+
+      </div>
+      <div className="page1">
+        
+      </div>
+      <div className="page1">
+        
+      </div>
+      </div>
 
     </div>
   )
