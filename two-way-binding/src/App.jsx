@@ -1,0 +1,30 @@
+// import React from 'react'
+import {useState} from 'react'
+const App = () => {
+
+  const [title, settitle] = useState('')
+
+  const submitHandler = (e) =>{
+    e.preventDefault()
+    console.log("Form Submitted by", title)
+    settitle('')
+  }
+  return (
+    <div>
+      <form action="" onSubmit={(e) =>{
+          submitHandler(e)
+        }}>
+        <input type="text" placeholder='Enter your name' 
+          value={title}
+          onChange={(e) =>{
+            settitle(e.target.value)
+          }}
+        />
+        {/* <input type="text" /> */}
+        <button >Submit</button>
+      </form>
+    </div>
+  )
+}
+
+export default App
